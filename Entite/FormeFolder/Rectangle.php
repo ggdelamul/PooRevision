@@ -1,25 +1,27 @@
 <?php 
 namespace FormSpace;
-
 //require 'Entite/Forme/Forme.php';
 use DateTime;
 use CouleurSpace\ICouleur;
-
-class Rectangle extends Forme
-
+class Rectangle implements IForme
 {
-
-    public function __construct(int $nbCote, ICouleur $couleur, DateTime $dateCreation)
+    public int $Id;
+    public int $nbCote; 
+    public ICouleur $couleur;
+    public DateTime $dateCreation;
+    public function __construct( int $nbCote, ICouleur $couleur, DateTime $dateCreation )
     {
-        parent::__construct($nbCote, $couleur, $dateCreation);
+        $this->nbCote= $nbCote;
+        $this-> couleur = $couleur; 
+        $this -> dateCreation= $dateCreation; 
     }
     
     public function calculerPerimetre():string
     {
-        return "perimetre calculé ";
+        return "perimetre Rectangle calculé ";
     }
     public function calculerAire(): string
     {
-        return "aire calculé  ";
+        return "aire Rectangle calculé  ";
     }
 }
