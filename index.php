@@ -7,6 +7,7 @@ require 'Entite/FormeFolder/IForme.php';
 require 'Entite/FormeFolder/Carre.php';
 require 'Entite/FormeFolder/Rectangle.php';
 require 'Entite/FormeFolder/Rond.php';
+require 'Factory/FactoryForm.php';
 /******************************première partie de l'exercice****************** ******************************************************************************/
 use CouleurSpace\{ICouleur, Rouge, Vert, Bleu};
 use FormSpace\{IForme, Carre, Rectangle, Rond};
