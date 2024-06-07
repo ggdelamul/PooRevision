@@ -9,8 +9,9 @@ class Rectangle implements IForme
     public int $nbCote; 
     public ICouleur $couleur;
     public DateTime $dateCreation;
-    public function __construct( int $nbCote, ICouleur $couleur, DateTime $dateCreation )
+    public function __construct(int $id, int $nbCote, ICouleur $couleur, DateTime $dateCreation )
     {
+        $this->Id=$id;
         $this->nbCote= $nbCote;
         $this-> couleur = $couleur; 
         $this -> dateCreation= $dateCreation; 

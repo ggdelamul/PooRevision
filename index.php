@@ -11,7 +11,7 @@ require 'Entite/FormeFolder/Rond.php';
 use CouleurSpace\{ICouleur, Rouge, Vert, Bleu};
 use FormSpace\{IForme, Carre, Rectangle, Rond};
 
-$forme1 = new Carre(4, new Rouge("mon rouge"), new DateTime());
+$forme1 = new Carre(123,4, new Rouge("mon rouge"), new DateTime());
 echo $forme1->calculerPerimetre(); 
 echo '<br>';
 echo $forme1->calculerAire(); 
