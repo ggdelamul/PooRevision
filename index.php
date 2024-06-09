@@ -26,10 +26,11 @@ use factorySpace\{FactoryForm, FactoryFormeCarre};
  * **************************************************************************
  *****************************************************************************/
 
+
+
+
+
 $factory = new FactoryFormeCarre();
-
-
-
 $forme2 =  $factory->MakeForme(123,4, new Vert("mon vert"), new DateTime());
 echo $forme2->calculerPerimetre(); 
 echo '<br>';
@@ -55,6 +56,11 @@ echo '<pre>';
 var_dump(FactoryForm::$ListOfForme);
 echo '</pre>';
 
+
+echo '<hr>';
+ 
+
+var_dump($forme4);
 
 
 
